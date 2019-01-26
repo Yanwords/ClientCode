@@ -81,9 +81,13 @@ public class scenicdisplay extends Activity {
                   @Override
                   public void run() {
                 	  String scenicScore=scenicscore.getText().toString();
-            		  Log.v("scenicName = ", scenicScore);
+            		  if ("".equals(scenicScore)) {
+            			  scenicScore = "0";
+            		  }
+//            		  float score = Float.parseFloat(scenicScore);
+                	  Log.v("scenicName", scenicScore);
                 	  //url= url_constant+"scenicname="+scenicName;
-                	  url = HTTPUtil.url_constant + url_constant;
+                	  url = HTTPUtil.url_constant + url_constant + "scenicscore="+scenicScore;
             		  Log.v("url", url);
                 	  @SuppressWarnings("resource")
 					HttpClient httpclient = new DefaultHttpClient();  
@@ -152,7 +156,8 @@ public class scenicdisplay extends Activity {
 					private void displayTable(JSONArray array) throws JSONException {
 						// TODO Auto-generated method stub
 //						table.setBackgroundColor(Color.BLACK);
-						 String[] columnName = {"scenicId","scenicName", "scenicInfo", "scenicScore"};
+						String[] columnName = {"scenicId","scenicName", "scenicInfo", "scenicScore"};
+						table.removeAllViews();
 						for (int row = 0; row < array.length(); ++row) {
 							TableRow tableRow = new TableRow(scenicdisplay.this);
 							//tableRow.setBackgroundColor(Color.BLUE);
@@ -170,14 +175,18 @@ public class scenicdisplay extends Activity {
 								textView.setGravity(Gravity.CENTER);
 								textView.setBackgroundResource(R.drawable.abc_tab_indicator_material);
 								tableRow.addView(textView);
+								
 								LayoutParams lp = new LayoutParams();
 								if (lp != null) {
 									lp.setMargins(2, 2, 2, 2);
 									textView.setLayoutParams(lp);
 								}
+								
 							}
-							table.addView(tableRow, new TableLayout.LayoutParams(100, 50));
+							
+							table.addView(tableRow, new TableLayout.LayoutParams(100, 150));
 						}
+//						table.setScrol
 					}
                   };
                   

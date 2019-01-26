@@ -114,21 +114,24 @@
                 android:layout_marginTop="10dp"
                 android:onClick="scenicdisplay"
                 android:text="@string/scenicdisplay" />
-        </LinearLayout>
+        </LinearLayout>  
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="46dp"
             android:gravity="center"
             android:orientation="horizontal" >
-            <TableLayout
-      			android:id="@+id/table"
-      			android:layout_width="match_parent"
-      			android:layout_height="wrap_content"
-      			android:layout_marginTop="16dp"/>
+            <ScrollView 
+  				android:layout_width="match_parent"
+ 				android:layout_height="match_parent">
+            	<TableLayout
+      				android:id="@+id/table"
+      				android:layout_width="match_parent"
+      				android:layout_height="wrap_content"
+      				android:layout_marginTop="16dp"/>
+            </ScrollView>
         </LinearLayout>
-        
     </LinearLayout>
     
     
