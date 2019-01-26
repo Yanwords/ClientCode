@@ -1,0 +1,56 @@
+package com.nju.myapp;
+
+import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+
+@SuppressLint("NewApi")
+public class NewsFragment extends Fragment {
+	private TextView tv;
+	private Button shareExperience;
+	private Button scenicEvaluation;
+	private Button addFriend;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+             Bundle savedInstanceState) {
+        View newsLayout = inflater.inflate(R.layout.news_layout, container, false);
+        tv=(TextView) newsLayout.findViewById(R.id.news);
+        shareExperience = (Button) newsLayout.findViewById(R.id.button7);
+        scenicEvaluation = (Button) newsLayout.findViewById(R.id.button8);
+        addFriend = (Button) newsLayout.findViewById(R.id.button9);
+        setListener();
+        tv.setText("哈哈哈哈哈哈");
+        return newsLayout;
+     }
+    /**
+     * 设置事件的监听器的方法
+     */
+     private void setListener() {
+        shareExperience.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+          	  Intent intent = new Intent(getActivity(), shareexperience.class);
+          	  startActivity(intent);
+            }
+        });
+        scenicEvaluation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+          	  Intent intent = new Intent(getActivity(), scenicevaluation.class);
+          	  startActivity(intent);
+            }
+        });
+        addFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+          	  Intent intent = new Intent(getActivity(), addfriend.class);
+          	  startActivity(intent);
+            }
+        });
+     }
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/greeting"
+            android:scaleType="centerCrop"
+            android:src="@drawable/good_morning_img" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scenicEvaluationTitle"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/loginGreeting"
+        android:textColor="#9affffff"
+        android:textSize="20sp" />
+    <!-- new styles for editText -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp" >
+
+        <!-- android:layout_marginBottom="10dp" -->
+        <!-- android:orientation设置控件左右对齐和上下对齐 -->
+        <!-- android:orientation="horizontal"左右对齐 -->
+        <!-- android:orientation="vertical"  上下对齐 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/scenicname"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/evaluationcontent"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="scenicevaluation"
+                android:text="@string/scenicevaluation" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!--  
+    <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="18dp"
+      android:text="@string/scenicEvaluationTitle"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+   <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/textView1"
+      android:layout_marginTop="20dp"
+      android:text="@string/scenicname"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/editText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      android:layout_alignBottom="@+id/textView2"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_toRightOf="@+id/textView3"
+      android:layout_toEndOf="@+id/textView3"
+      android:ems="10" >
+
+      <requestFocus />
+   </EditText>
+   <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/textView2"
+      android:layout_marginTop="20dp"
+      android:text="@string/evaluationcontent"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/editText2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      android:layout_alignBottom="@+id/textView3"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_toRightOf="@+id/textView3"
+      android:layout_toEndOf="@+id/textView3"
+      android:ems="10" >
+
+   </EditText>
+
+   <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/editText2"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:onClick="scenicevaluation"
+      android:text="@string/scenicevaluation" />-->
+   
+</RelativeLayout>

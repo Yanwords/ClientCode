@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nju.myapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:hasCode="true" android:vmSafeMode="true" android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nju.myapp.login"
+            android:label="login page">
+          
+        </activity>
+        <activity
+            android:name="com.nju.myapp.register"
+            android:label="register page">
+          
+        </activity>
+        <activity
+            android:name="com.nju.myapp.scenicselect"
+            android:label="scenicSelect page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.scenicinsert"
+            android:label="scenicInsert page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.scenicdisplay"
+            android:label="scenicdisplay page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.travelrecord"
+            android:label="travelrecord page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.shareexperience"
+            android:label="shareexperience page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.scenicevaluation"
+            android:label="scenicevaluation page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.addfriend"
+            android:label="addfriend page">
+        </activity>
+    </application>
+
+</manifest>
