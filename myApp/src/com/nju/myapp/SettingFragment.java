@@ -20,7 +20,7 @@ public class SettingFragment extends Fragment {
              Bundle savedInstanceState) {
         View settingLayout = inflater.inflate(R.layout.setting_layout, container, false);
         tv=(TextView) settingLayout.findViewById(R.id.setting);
-        tv.setText("哈哈哈哈哈哈");
+        tv.setText("出游协同工具");
         login = (Button)settingLayout.findViewById(R.id.button1);
 //      welcome = (TextView)findViewById(R.id.textView1);
         register = (Button)settingLayout.findViewById(R.id.button2);

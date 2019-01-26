@@ -15,7 +15,7 @@ public class ContactsFragment extends Fragment {
              Bundle savedInstanceState) {
         View contactsLayout = inflater.inflate(R.layout.contacts_layout, container, false);
         tv=(TextView) contactsLayout.findViewById(R.id.contacts);
-        tv.setText("哈哈哈哈哈哈");
+        tv.setText("出游协同工具");
         return contactsLayout;
      }
 }

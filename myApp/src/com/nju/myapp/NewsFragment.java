@@ -24,7 +24,7 @@ public class NewsFragment extends Fragment {
         scenicEvaluation = (Button) newsLayout.findViewById(R.id.button8);
         addFriend = (Button) newsLayout.findViewById(R.id.button9);
         setListener();
-        tv.setText("哈哈哈哈哈哈");
+        tv.setText("出游协同工具");
         return newsLayout;
      }
     /**

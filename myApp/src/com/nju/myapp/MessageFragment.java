@@ -20,7 +20,7 @@ public class MessageFragment extends Fragment {
              Bundle savedInstanceState) {
         View messageLayout = inflater.inflate(R.layout.message_layout, container, false);
         tv=(TextView) messageLayout.findViewById(R.id.message);
-        tv.setText("哈哈哈哈哈哈");
+        tv.setText("出游协同工具");
         scenicInsert = (Button)messageLayout.findViewById(R.id.button4);
         scenicDisplay = (Button)messageLayout.findViewById(R.id.button5);
         travelRecord = (Button)messageLayout.findViewById(R.id.button6);
