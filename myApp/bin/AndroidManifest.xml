@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="4"
         android:targetSdkVersion="21" />
+    <!-- add uses-permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -59,6 +61,14 @@
         <activity
             android:name="com.nju.myapp.addfriend"
             android:label="addfriend page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.SpotList"
+            android:label="spotlist page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.ScenicSpotList"
+            android:label="scenic spotlist page">
         </activity>
     </application>
 

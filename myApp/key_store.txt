@@ -1,0 +1,7 @@
+cd jdk*
+cd bin
+keytool -genkey -alias android.keystore -keyalg RSA -validity 100000 -keystore android.keystore
+口令:123456
+名字：y
+组织单位名称:y
+组织名称:y

@@ -3,6 +3,7 @@ package com.nju.myapp;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+//import android.support.v7.appcompat.AppCompatActivity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;

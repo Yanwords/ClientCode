@@ -142,7 +142,9 @@ private Button register;
                               try {
                                   JSONObject json= new JSONObject(key);
                                   String result = (String) json.get("register");
+                                  String gen = (String) json.get("gender");
                                   if ("success".equals(result)){
+                                	  Log.v("gender", gen);
                                 	  MainActivity.USERNAME = data.getString("username");
                                 	  USERNAME.setText(MainActivity.USERNAME);
                                       Toast.makeText(register.this,"注册成功",Toast.LENGTH_LONG).show();
