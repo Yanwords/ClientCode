@@ -17,6 +17,7 @@
    <string name="shareExperienceTitle" >Share Experience</string>
    <string name="modifyNameTitle">Modify UserName</string>
    <string name="modifyPasswordTitle">Modify Password</string>
+   <string name="forgetPassTitle">Forget Password</string>
    <string name="loginGreeting" >We pursue a relaxed gaming experience</string>
    <string name="screen" >Screen</string>
    <string name="addFriendTitle" >Add Friends</string>
@@ -52,4 +53,6 @@
    <string name="modifypassword">ModifyPassword</string>
    <string name="newpassword">NewPassword</string>
    <string name="ackpassword">AckPassword</string>
+   <string name="forgetpassword">ForgetPassword</string>
+   <string name="reset">Reset</string>
 </resources>

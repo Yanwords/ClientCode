@@ -20,6 +20,7 @@ public class SettingFragment extends Fragment {
 	private Button scenicSelect;
 	private Button modifyName;
 	private Button modifyPassword;
+	private Button forgetPassword;
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View settingLayout = inflater.inflate(R.layout.setting_layout, container, false);
@@ -31,6 +32,7 @@ public class SettingFragment extends Fragment {
 		scenicSelect = (Button) settingLayout.findViewById(R.id.button3);
 		modifyName = (Button) settingLayout.findViewById(R.id.button4);
 		modifyPassword = (Button) settingLayout.findViewById(R.id.button5);
+		forgetPassword = (Button) settingLayout.findViewById(R.id.button6);
 		setListener();
 		return settingLayout;
 	}
@@ -68,6 +70,13 @@ public class SettingFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(getActivity(), modifypassword.class);
+				startActivity(intent);
+			}
+		});
+		forgetPassword.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), forgetpassword.class);
 				startActivity(intent);
 			}
 		});

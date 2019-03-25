@@ -47,6 +47,10 @@
             android:label="modifyPassword page">
         </activity>
         <activity
+            android:name="com.nju.myapp.setting.forgetpassword"
+            android:label="forgetPassword page">
+        </activity>
+        <activity
             android:name="com.nju.myapp.message.scenicinsert"
             android:label="scenicInsert page">
         </activity>
