@@ -63,6 +63,10 @@
             android:label="travelrecord page">
         </activity>
         <activity
+            android:name="com.nju.myapp.message.setscore"
+            android:label="setscore page">
+        </activity>
+        <activity
             android:name="com.nju.myapp.news.shareexperience"
             android:label="shareexperience page">
         </activity>

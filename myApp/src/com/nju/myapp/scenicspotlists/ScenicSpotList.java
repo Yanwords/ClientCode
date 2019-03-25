@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.nju.myapp.R;
-import com.nju.myapp.R.id;
-import com.nju.myapp.R.layout;
+import com.nju.myapp.message.setscore;
 import com.nju.myapp.util.ScenicSpotArray;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -56,6 +56,9 @@ public class ScenicSpotList extends Activity {
 			public void seleId(int i) {
 
 				int order = i + 1;
+				ScenicSpotArray.setScenicIndex(i);
+				Intent intent = new Intent(ScenicSpotList.this, setscore.class);
+				startActivity(intent);
 				Toast.makeText(getApplicationContext(), "您正在为" + order + "号车主充值", Toast.LENGTH_SHORT).show();
 			}
 		});

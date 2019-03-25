@@ -3,7 +3,6 @@ package com.nju.myapp.scenicspotlists;
 import java.util.List;
 
 import com.nju.myapp.R;
-import com.nju.myapp.R.id;
 
 import android.content.Context;
 import android.view.LayoutInflater;
