@@ -440,8 +440,12 @@ int drawable ic_launcher_background 0x7f020044
 int drawable ic_launcher_foreground 0x7f020045
 int drawable ic_lock_white_24dp 0x7f020046
 int drawable logo 0x7f020047
-int drawable notification_template_icon_bg 0x7f020049
-int drawable travel 0x7f020048
+int drawable logo2 0x7f020048
+int drawable logo3 0x7f020049
+int drawable logo4 0x7f02004a
+int drawable logo5 0x7f02004b
+int drawable notification_template_icon_bg 0x7f02004d
+int drawable travel 0x7f02004c
 int id action0 0x7f0a006f
 int id action_bar 0x7f0a003e
 int id action_bar_activity_content 0x7f0a0003

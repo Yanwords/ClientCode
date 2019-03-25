@@ -1997,8 +1997,12 @@ containing a value of this type.
         public static final int ic_launcher_foreground=0x7f020045;
         public static final int ic_lock_white_24dp=0x7f020046;
         public static final int logo=0x7f020047;
-        public static final int notification_template_icon_bg=0x7f020049;
-        public static final int travel=0x7f020048;
+        public static final int logo2=0x7f020048;
+        public static final int logo3=0x7f020049;
+        public static final int logo4=0x7f02004a;
+        public static final int logo5=0x7f02004b;
+        public static final int notification_template_icon_bg=0x7f02004d;
+        public static final int travel=0x7f02004c;
     }
     public static final class id {
         public static final int action0=0x7f0a006f;
