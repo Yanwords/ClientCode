@@ -4,7 +4,18 @@
     android:layout_height="120px"
     android:orientation="horizontal" 
     android:descendantFocusability="blocksDescendants"> //missing click no effective
-    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/greeting"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background1" />
+    </FrameLayout>
     <TextView
         android:id="@+id/order"
         android:layout_width="wrap_content"

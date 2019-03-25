@@ -14,7 +14,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/greeting"
             android:scaleType="centerCrop"
-            android:src="@drawable/good_morning_img" />
+            android:src="@drawable/background1" />
     </FrameLayout>
 
     <LinearLayout
