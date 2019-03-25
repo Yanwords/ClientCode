@@ -2252,10 +2252,10 @@ containing a value of this type.
         public static final int ic_launcher_round=0x7f030001;
     }
     public static final class string {
-        public static final int Login=0x7f0b0024;
-        public static final int Modify=0x7f0b003b;
-        public static final int TOURIST=0x7f0b002a;
-        public static final int TextView=0x7f0b0027;
+        public static final int Login=0x7f0b0025;
+        public static final int Modify=0x7f0b003c;
+        public static final int TOURIST=0x7f0b002b;
+        public static final int TextView=0x7f0b0028;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0b0001;
@@ -2315,43 +2315,45 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f0b0004;
-        public static final int ackname=0x7f0b003d;
-        public static final int ackpassword=0x7f0b003f;
+        public static final int ackname=0x7f0b003e;
+        public static final int ackpassword=0x7f0b0041;
         public static final int action_settings=0x7f0b0013;
-        public static final int addFriendTitle=0x7f0b0020;
-        public static final int addfriend=0x7f0b0037;
-        public static final int age=0x7f0b0029;
+        public static final int addFriendTitle=0x7f0b0021;
+        public static final int addfriend=0x7f0b0038;
+        public static final int age=0x7f0b002a;
         public static final int app_name=0x7f0b0012;
-        public static final int attempts=0x7f0b0026;
-        public static final int evaluationcontent=0x7f0b0032;
-        public static final int experiencecontent=0x7f0b0035;
-        public static final int friendname=0x7f0b0038;
-        public static final int gender=0x7f0b0028;
+        public static final int attempts=0x7f0b0027;
+        public static final int evaluationcontent=0x7f0b0033;
+        public static final int experiencecontent=0x7f0b0036;
+        public static final int friendname=0x7f0b0039;
+        public static final int gender=0x7f0b0029;
         public static final int greeting=0x7f0b0015;
-        public static final int loginGreeting=0x7f0b001e;
+        public static final int loginGreeting=0x7f0b001f;
         public static final int loginTitle=0x7f0b0014;
         public static final int modifyNameTitle=0x7f0b001d;
-        public static final int modifyname=0x7f0b003a;
-        public static final int newname=0x7f0b003c;
-        public static final int newpassword=0x7f0b003e;
-        public static final int password=0x7f0b0023;
-        public static final int register=0x7f0b0025;
+        public static final int modifyPasswordTitle=0x7f0b001e;
+        public static final int modifyname=0x7f0b003b;
+        public static final int modifypassword=0x7f0b003f;
+        public static final int newname=0x7f0b003d;
+        public static final int newpassword=0x7f0b0040;
+        public static final int password=0x7f0b0024;
+        public static final int register=0x7f0b0026;
         public static final int registerTitle=0x7f0b0016;
         public static final int scenicDisplayTitle=0x7f0b0019;
         public static final int scenicEvaluationTitle=0x7f0b001a;
         public static final int scenicInsertTitle=0x7f0b0018;
         public static final int scenicSelectTitle=0x7f0b0017;
-        public static final int scenicdisplay=0x7f0b0030;
-        public static final int scenicevaluation=0x7f0b0031;
-        public static final int scenicinfo=0x7f0b002d;
-        public static final int scenicinsert=0x7f0b002f;
-        public static final int scenicname=0x7f0b002c;
-        public static final int scenicscore=0x7f0b002e;
-        public static final int scenicselect=0x7f0b002b;
-        public static final int screen=0x7f0b001f;
+        public static final int scenicdisplay=0x7f0b0031;
+        public static final int scenicevaluation=0x7f0b0032;
+        public static final int scenicinfo=0x7f0b002e;
+        public static final int scenicinsert=0x7f0b0030;
+        public static final int scenicname=0x7f0b002d;
+        public static final int scenicscore=0x7f0b002f;
+        public static final int scenicselect=0x7f0b002c;
+        public static final int screen=0x7f0b0020;
         public static final int shareExperienceTitle=0x7f0b001c;
-        public static final int shareexperience=0x7f0b0036;
-        public static final int spotlist=0x7f0b0039;
+        public static final int shareexperience=0x7f0b0037;
+        public static final int spotlist=0x7f0b003a;
         /**  Text to use when the number in a notification info is too large
          (greater than status_bar_notification_info_maxnum, defined in
          values/config.xml) and must be truncated. May need to be localized
@@ -2360,10 +2362,10 @@ containing a value of this type.
          */
         public static final int status_bar_notification_info_overflow=0x7f0b0011;
         public static final int travelRecordTitle=0x7f0b001b;
-        public static final int travelcontent=0x7f0b0033;
-        public static final int travelrecord=0x7f0b0034;
-        public static final int username=0x7f0b0022;
-        public static final int welcome=0x7f0b0021;
+        public static final int travelcontent=0x7f0b0034;
+        public static final int travelrecord=0x7f0b0035;
+        public static final int username=0x7f0b0023;
+        public static final int welcome=0x7f0b0022;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0c0041;

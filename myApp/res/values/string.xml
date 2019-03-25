@@ -16,6 +16,7 @@
    <string name="travelRecordTitle" >Travel Record</string>
    <string name="shareExperienceTitle" >Share Experience</string>
    <string name="modifyNameTitle">Modify UserName</string>
+   <string name="modifyPasswordTitle">Modify Password</string>
    <string name="loginGreeting" >We pursue a relaxed gaming experience</string>
    <string name="screen" >Screen</string>
    <string name="addFriendTitle" >Add Friends</string>
@@ -48,6 +49,7 @@
    <string name="Modify">Modify</string>
    <string name="newname">New_Name</string>
    <string name="ackname">Ack_Name</string>
+   <string name="modifypassword">ModifyPassword</string>
    <string name="newpassword">NewPassword</string>
    <string name="ackpassword">AckPassword</string>
 </resources>
