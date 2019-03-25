@@ -15,6 +15,7 @@
    <string name="scenicEvaluationTitle">Scenic Evaluation</string>
    <string name="travelRecordTitle" >Travel Record</string>
    <string name="shareExperienceTitle" >Share Experience</string>
+   <string name="modifyNameTitle">Modify UserName</string>
    <string name="loginGreeting" >We pursue a relaxed gaming experience</string>
    <string name="screen" >Screen</string>
    <string name="addFriendTitle" >Add Friends</string>
@@ -43,5 +44,8 @@
    <string name="addfriend" >AddFriend</string>
    <string name="friendname" >FriendName</string>
    <string name="spotlist" >SpotLists</string>
-    
+   <string name="modifyname">ModifyName</string>
+   <string name="Modify">Modify</string>
+   <string name="newname">New_Name</string>
+   <string name="ackname">Ack_Name</string>
 </resources>

@@ -2,7 +2,7 @@ package com.nju.myapp.util;
 
 import java.util.ArrayList;
 
-import com.nju.myapp.ScenicSpot;
+import com.nju.myapp.scenicspotlists.ScenicSpot;
 
 public class ScenicSpotArray {
 	static private ArrayList<ScenicSpot> array = null;
