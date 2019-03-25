@@ -1,8 +1,6 @@
 package com.nju.myapp.setting;
 
 import com.nju.myapp.R;
-import com.nju.myapp.R.id;
-import com.nju.myapp.R.layout;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
@@ -20,42 +18,50 @@ public class SettingFragment extends Fragment {
 	private Button login;
 	private Button register;
 	private Button scenicSelect;
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-             Bundle savedInstanceState) {
-        View settingLayout = inflater.inflate(R.layout.setting_layout, container, false);
-        tv=(TextView) settingLayout.findViewById(R.id.setting);
-        tv.setText("出游协同工具");
-        login = (Button)settingLayout.findViewById(R.id.button1);
+	private Button modifyName;
+
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		View settingLayout = inflater.inflate(R.layout.setting_layout, container, false);
+		tv = (TextView) settingLayout.findViewById(R.id.setting);
+		tv.setText("出游协同工具");
+		login = (Button) settingLayout.findViewById(R.id.button1);
 //      welcome = (TextView)findViewById(R.id.textView1);
-        register = (Button)settingLayout.findViewById(R.id.button2);
-        scenicSelect = (Button)settingLayout.findViewById(R.id.button3);
-        setListener();
-        return settingLayout;
-     }
-    
-    private void setListener() {
-       login.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-         	  Intent intent = new Intent(getActivity(), login.class);
-         	  startActivity(intent);
-           }
-       });
-       register.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-         	  Intent intent = new Intent(getActivity(), register.class);
-         	  startActivity(intent);
-           }
-       });
-       scenicSelect.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-         	  Intent intent = new Intent(getActivity(), scenicselect.class);
-         	  startActivity(intent);
-           }
-       });
-    }
-    
-    
+		register = (Button) settingLayout.findViewById(R.id.button2);
+		scenicSelect = (Button) settingLayout.findViewById(R.id.button3);
+		modifyName = (Button) settingLayout.findViewById(R.id.button4);
+		setListener();
+		return settingLayout;
+	}
+
+	private void setListener() {
+		login.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), login.class);
+				startActivity(intent);
+			}
+		});
+		register.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), register.class);
+				startActivity(intent);
+			}
+		});
+		scenicSelect.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), scenicselect.class);
+				startActivity(intent);
+			}
+		});
+		modifyName.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), modifyname.class);
+				startActivity(intent);
+			}
+		});
+	}
+
 }

@@ -39,6 +39,10 @@
             android:label="scenicSelect page">
         </activity>
         <activity
+            android:name="com.nju.myapp.setting.modifyname"
+            android:label="modifyName page">
+        </activity>
+        <activity
             android:name="com.nju.myapp.message.scenicinsert"
             android:label="scenicInsert page">
         </activity>
@@ -70,6 +74,7 @@
             android:name="com.nju.myapp.scenicspotlists.ScenicSpotList"
             android:label="scenic spotlist page">
         </activity>
+        
     </application>
 
 </manifest>
