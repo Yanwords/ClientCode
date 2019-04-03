@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--  
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="120px"
     android:orientation="horizontal" 
     android:descendantFocusability="blocksDescendants"> //missing click no effective
+-->    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical" 
+    tools:context=".spotlists.Spot">    
+   <!-- 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-
+ 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -15,14 +24,20 @@
             android:contentDescription="@string/greeting"
             android:scaleType="centerCrop"
             android:src="@drawable/background1" />
+        
     </FrameLayout>
+    -->
     <TextView
         android:id="@+id/order"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_gravity="center"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="@color/theme"
         android:gravity="center"
         />
@@ -31,17 +46,25 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:contentDescription="icon"
+        android:layout_toEndOf="@+id/order"
+        android:layout_toRightOf="@+id/order"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         />
-
+<!-- android:layout_alignEnd="@+id/order"
+        android:layout_alignRight="@+id/order" -->
     <LinearLayout
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:gravity="center_vertical"
         android:layout_gravity="center"
+        android:layout_toEndOf="@+id/logo"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:orientation="vertical">
 
         <TextView
@@ -62,28 +85,37 @@
 
     <TextView
         android:id="@+id/money"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/info"
+        android:layout_toRightOf="@+id/info"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         />
 
     <CheckBox
         android:id="@+id/jud"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_toStartOf="@+id/delta"
+        android:layout_toLeftOf="@+id/delta"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         />
 
     <Button
         android:id="@+id/delta"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
         android:text="冲值"/>
 
-</LinearLayout>
+</RelativeLayout>

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.nju.myapp.R;
-import com.nju.myapp.R.drawable;
-import com.nju.myapp.R.id;
-import com.nju.myapp.R.layout;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -35,7 +32,7 @@ public class SpotList extends Activity {
 				.detectLeakedClosableObjects().penaltyLog().penaltyDeath().build());
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.spotlist);
-
+		spotview = (ListView) findViewById(R.id.spotview);
 		initSpot();
 
 		SpotAdapter adapter = new SpotAdapter(getApplicationContext(), R.layout.spot, spotList);
@@ -59,11 +56,12 @@ public class SpotList extends Activity {
 				Toast.makeText(getApplicationContext(), "您正在为" + order + "号车主充值", Toast.LENGTH_SHORT).show();
 			}
 		});
+		initSpot();
+		adapter.notifyDataSetChanged();
 	}
 
 	private void initSpot() {
 
-		spotview = (ListView) findViewById(R.id.spotview);
 		Spot spot1 = new Spot(1, R.drawable.logo, "胡海", 100);
 		Spot spot2 = new Spot(2, R.drawable.logo, "蓝月", 200);
 		spotList.add(spot1);

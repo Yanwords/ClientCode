@@ -40,7 +40,7 @@ public class ScenicSpotList extends Activity {
 
 		ScenicSpotAdapter adapter = new ScenicSpotAdapter(getApplicationContext(), R.layout.scenicspot, spotList);
 		spotview.setAdapter(adapter);
-
+		adapter.notifyDataSetChanged();
 		spotview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -5,6 +5,7 @@ import java.util.List;
 import com.nju.myapp.R;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ public class ScenicSpotAdapter extends ArrayAdapter<ScenicSpot> {
 
 		super(context, resourceId, objects);
 		this.resourceId = resourceId;
+		Log.v("adapter:", Integer.toString(objects.size()));
 	}
 
 	@Override
