@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="scenicinsert"
+                android:background="@drawable/button_bg"
                 android:text="@string/scenicinsert" />
 
             <Button
@@ -57,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="scenicdisplay"
+                android:background="@drawable/button_bg"
                 android:text="@string/scenicdisplay" />
 
             <Button
@@ -65,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="travelrecord"
+                android:background="@drawable/button_bg"
                 android:text="@string/travelrecord" />
         </LinearLayout>
 </RelativeLayout>

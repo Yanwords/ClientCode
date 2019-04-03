@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="login"
+                android:background="@drawable/button_bg"
                 android:text="@string/Login" />
 
             <Button
@@ -57,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="register"
+                android:background="@drawable/button_bg"
                 android:text="@string/register" />
 
             <Button
@@ -65,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="scenicselect"
+                android:background="@drawable/button_bg"
                 android:text="@string/scenicselect" />
             <Button
                 android:id="@+id/button4"
@@ -72,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="modifyname"
+                android:background="@drawable/button_bg"
                 android:text="@string/modifyname" />
             <Button
                 android:id="@+id/button5"
@@ -79,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="modifypassword"
+                android:background="@drawable/button_bg"
                 android:text="@string/modifypassword" />
              <Button
                 android:id="@+id/button6"
@@ -86,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="forgetpassword"
+                android:background="@drawable/button_bg"
                 android:text="@string/forgetpassword" />
         </LinearLayout>
 

@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="shareexperience"
+                android:background="@drawable/button_bg"
                 android:text="@string/shareexperience" />
 
             <Button
@@ -57,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="scenicevaluation"
+                android:background="@drawable/button_bg"
                 android:text="@string/scenicevaluation" />
 
             <Button
@@ -65,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="addfriend"
+                android:background="@drawable/button_bg"
                 android:text="@string/addfriend" />
             <Button
                 android:id="@+id/button10"
@@ -72,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:onClick="addfriend"
+                android:background="@drawable/button_bg"
                 android:text="@string/spotlist"></Button>
         </LinearLayout>
     
