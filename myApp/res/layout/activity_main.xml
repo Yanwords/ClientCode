@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/greeting"
             android:scaleType="centerCrop"
-            android:src="@drawable/good_morning_img" />
+            android:src="@drawable/background1" />
     </FrameLayout>
 
     <LinearLayout
@@ -177,92 +177,5 @@
                 android:text="@string/addfriend" />
         </LinearLayout>
     </LinearLayout>
-
-    <!--
-   <TextView
-      android:id="@+id/textView1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="18dp"
-      android:text="@string/welcome"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
-   <Button
-      android:id="@+id/button1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="54dp"
-      android:onClick="login"
-      android:text="@string/Login" />
-   <Button
-      android:id="@+id/button2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="94dp"
-      android:onClick="register"
-      android:text="@string/register" />
-   <Button
-      android:id="@+id/button3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="134dp"
-      android:onClick="scenicselect"
-      android:text="@string/scenicselect" />
-   <Button
-      android:id="@+id/button4"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="174dp"
-      android:onClick="scenicinsert"
-      android:text="@string/scenicinsert" />
-   <Button
-      android:id="@+id/button5"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="214dp"
-      android:onClick="scenicdisplay"
-      android:text="@string/scenicdisplay" />
-   <Button
-      android:id="@+id/button6"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="254dp"
-      android:onClick="travelrecord"
-      android:text="@string/travelrecord" />
-   <Button
-      android:id="@+id/button7"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="294dp"
-      android:onClick="shareexperience"
-      android:text="@string/shareexperience" />
-   <Button
-      android:id="@+id/button8"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="334dp"
-      android:onClick="scenicevaluation"
-      android:text="@string/scenicevaluation" />
-   <Button
-      android:id="@+id/button9"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="54dp"
-      android:layout_marginStart="32dp"
-      android:layout_marginLeft="32dp"
-      android:layout_toRightOf="@+id/button8"
-      android:layout_toEndOf="@+id/button8"
-      android:onClick="addfriend"
-      android:text="@string/addfriend" />
-    -->
-
+    
 </RelativeLayout>

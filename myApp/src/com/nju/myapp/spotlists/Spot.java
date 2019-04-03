@@ -46,4 +46,20 @@ public class Spot {
 
 		return money;
 	}
+
+	public CheckBox getJud() {
+		return jud;
+	}
+
+	public void setJud(CheckBox jud) {
+		this.jud = jud;
+	}
+
+	public Button getDelta() {
+		return delta;
+	}
+
+	public void setDelta(Button delta) {
+		this.delta = delta;
+	}
 }

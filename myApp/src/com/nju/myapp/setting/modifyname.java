@@ -77,13 +77,6 @@ public class modifyname extends Activity {
 		modify.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				/*
-				 * String userName=username.getText().toString(); Log.v("userName = ",
-				 * userName); String passWord= password.getText().toString();
-				 * Log.v("passwd = ",passWord);
-				 * 
-				 * //loginRemoteService(userName,passWord);
-				 */
 				new Thread(new Runnable() {
 					@Override
 					public void run() {

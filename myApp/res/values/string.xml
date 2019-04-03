@@ -5,6 +5,7 @@
     tools:ignore="MissingTranslation"
     tools:locale="en">
    <string name="app_name">LoginScreen</string>
+   <string name="home">Home</string>
    <string name="action_settings">Settings</string>
    <string name="loginTitle">Login </string>
    <string name="greeting">hello,wrold</string>
@@ -59,4 +60,7 @@
    <string name="generalname">ScenicSpot</string>
    <string name="generalinfo">ScenicSpotInfo</string>
    <string name="setscore">SetScore</string>
+   
+   
+   <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
