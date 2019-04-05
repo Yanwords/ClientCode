@@ -18,7 +18,6 @@ import android.os.StrictMode;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 @TargetApi(Build.VERSION_CODES.GINGERBREAD)
 @SuppressLint("NewApi")
@@ -47,8 +46,8 @@ public class ScenicSpotList extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 				ScenicSpot scenicspot = spotList.get(position);
-				Toast.makeText(getApplicationContext(), "您要查看" + scenicspot.getorder() + "号车主的全部信息", Toast.LENGTH_SHORT)
-						.show();
+//				Toast.makeText(getApplicationContext(), "您要查看" + scenicspot.getorder() + "号车主的全部信息", Toast.LENGTH_SHORT)
+//						.show();
 			}
 		});
 
@@ -60,7 +59,7 @@ public class ScenicSpotList extends Activity {
 				ScenicSpotArray.setScenicIndex(i);
 				Intent intent = new Intent(ScenicSpotList.this, setscore.class);
 				startActivity(intent);
-				Toast.makeText(getApplicationContext(), "您正在为" + order + "号车主充值", Toast.LENGTH_SHORT).show();
+//				Toast.makeText(getApplicationContext(), "您正在为" + order + "号车主充值", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}
