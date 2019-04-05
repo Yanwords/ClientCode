@@ -34,7 +34,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
@@ -44,7 +43,7 @@ import android.widget.Toast;
 public class frienddisplay extends AppCompatActivity {
 	private static String url = "";
 	private final String url_constant = "/user/friend.do?";
-	private EditText myname = null;
+//	private EditText myname = null;
 	@SuppressLint("NewApi")
 	private Button display;
 //	private TableLayout table;
@@ -63,7 +62,7 @@ public class frienddisplay extends AppCompatActivity {
 				.detectLeakedClosableObjects().penaltyLog().penaltyDeath().build());
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.frienddisplay);
-		myname = (EditText) findViewById(R.id.editText1);
+//		myname = (EditText) findViewById(R.id.editText1);
 		display = (Button) findViewById(R.id.button1);
 //		table = (TableLayout) findViewById(R.id.table);
 
@@ -82,7 +81,8 @@ public class frienddisplay extends AppCompatActivity {
 				new Thread(new Runnable() {
 					@Override
 					public void run() {
-						String name = myname.getText().toString();
+//						String name = myname.getText().toString();
+						String name = MainActivity.USERNAME;
 						if ("".equals(name)) {
 							name = "";
 						}
