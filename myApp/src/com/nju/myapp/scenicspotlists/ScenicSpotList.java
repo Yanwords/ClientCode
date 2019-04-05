@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.nju.myapp.R;
+import com.nju.myapp.main.MainActivity;
 import com.nju.myapp.message.setscore;
 import com.nju.myapp.util.ScenicSpotArray;
 
@@ -65,7 +66,12 @@ public class ScenicSpotList extends Activity {
 	}
 
 	private void initSpot() {
-
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(ScenicSpotList.this, MainActivity.class));
+			}
+		});
 		spotview = (ListView) findViewById(R.id.spotview);
 		ArrayList<ScenicSpot> array = ScenicSpotArray.getArray();
 		if (array != null && array.size() > 0) {

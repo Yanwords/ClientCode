@@ -99,7 +99,24 @@
             android:name="com.nju.myapp.scenicspotlists.ScenicSpotList"
             android:label="scenic spotlist page">
         </activity>
-        
+        <activity
+            android:name="com.nju.myapp.contact.frienddisplay"
+            android:label="frienddisplay page"
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name="com.nju.myapp.friendlists.Friend"
+            android:label="friendlist page">
+        </activity>
+        <activity
+            android:name="com.nju.myapp.friendlists.FriendList"
+            android:label="friend list page">
+        </activity>
+         <activity
+            android:name="com.nju.myapp.contact.removefriend"
+            android:label="remove friend page">
+        </activity>
     </application>
 
 </manifest>

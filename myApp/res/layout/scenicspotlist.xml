@@ -29,5 +29,13 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent">
     </ListView>
-
+     <ImageView
+        android:id="@+id/sign_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/home"
+        android:background="@android:color/transparent"
+        android:src="@drawable/logo6" />
 </RelativeLayout>

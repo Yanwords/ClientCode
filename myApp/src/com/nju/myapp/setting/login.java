@@ -19,6 +19,7 @@ import com.nju.myapp.util.HTTPUtil;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -63,6 +64,7 @@ public class login extends Activity {
 		USERNAME = (TextView) findViewById(R.id.username);
 //      attempts.setText(Integer.toString(counter));
 		login = (Button) findViewById(R.id.button1);
+		initView();
 		setListener();
 	}
 
@@ -168,4 +170,12 @@ public class login extends Activity {
 		return true;
 	}
 
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(login.this, MainActivity.class));
+			}
+		});
+	}
 }

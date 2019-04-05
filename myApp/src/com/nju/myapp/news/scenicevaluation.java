@@ -23,6 +23,7 @@ import com.nju.myapp.util.HTTPUtil;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -60,6 +61,7 @@ public class scenicevaluation extends Activity {
 		scenicName = (EditText) findViewById(R.id.editText1);
 		evaluationContent = (EditText) findViewById(R.id.editText2);
 		evaluation = (Button) findViewById(R.id.button1);
+		initView();
 		setListener();
 	}
 
@@ -161,6 +163,14 @@ public class scenicevaluation extends Activity {
 		return true;
 	}
 
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(scenicevaluation.this, MainActivity.class));
+			}
+		});
+	}
 }
 
 /**

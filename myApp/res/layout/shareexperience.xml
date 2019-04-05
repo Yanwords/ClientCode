@@ -116,50 +116,14 @@
         </LinearLayout>
         
     </LinearLayout>
-    <!--  
-    <TextView
-      android:id="@+id/textView1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="18dp"
-      android:text="@string/shareExperienceTitle"
-      android:textAppearance="?android:attr/textAppearanceLarge" />
-   <TextView
-      android:id="@+id/textView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentLeft="true"
-      android:layout_below="@+id/textView1"
-      android:layout_marginTop="20dp"
-      android:text="@string/experiencecontent"
-      android:textAppearance="?android:attr/textAppearanceMedium" />
-
-   <EditText
-      android:id="@+id/editText1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:inputType="text"
-      android:layout_alignBottom="@+id/textView2"
-      android:layout_marginStart="32dp"
-      android:layout_marginLeft="32dp"
-      android:layout_toRightOf="@+id/textView2"
-      android:layout_toEndOf="@+id/textView2"
-      android:ems="10" >
-
-      <requestFocus />
-   </EditText>
-
-   <Button
-      android:id="@+id/button1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/editText1"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="50dp"
-      android:onClick="shareexperience"
-      android:text="@string/shareexperience" />-->
+        <ImageView
+        android:id="@+id/sign_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/home"
+        android:background="@android:color/transparent"
+        android:src="@drawable/logo6" />
    
 </RelativeLayout>

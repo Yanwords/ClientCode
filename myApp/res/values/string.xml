@@ -20,6 +20,8 @@
    <string name="modifyPasswordTitle">Modify Password</string>
    <string name="forgetPassTitle">Forget Password</string>
    <string name="setScoreTitle">Set Scenic Score</string>
+   <string name="friendDisplayTitle">Friend Lists</string>
+   <string name="removeFriendTitle">Remove my Friend</string>
    <string name="loginGreeting" >We pursue a relaxed gaming experience</string>
    <string name="screen" >Screen</string>
    <string name="addFriendTitle" >Add Friends</string>
@@ -60,7 +62,7 @@
    <string name="generalname">ScenicSpot</string>
    <string name="generalinfo">ScenicSpotInfo</string>
    <string name="setscore">SetScore</string>
-   
-   
+   <string name="frienddisplay">FriendList</string>
+   <string name="removefriend">Remove</string>
    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -14,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.nju.myapp.R;
+import com.nju.myapp.main.MainActivity;
 import com.nju.myapp.scenicspotlists.ScenicSpot;
 import com.nju.myapp.util.HTTPUtil;
 import com.nju.myapp.util.ScenicSpotArray;
@@ -21,6 +22,7 @@ import com.nju.myapp.util.ScenicSpotArray;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -72,6 +74,7 @@ public class setscore extends Activity {
 			Log.v("scenicName = ", ss.getSpotname());
 			scenicinfo.setText(ss.getInformation());
 			Log.v("scenicInfo = ", ss.getInformation());
+			initView();
 			setListener();
 		}
 
@@ -159,4 +162,12 @@ public class setscore extends Activity {
 		return true;
 	}
 
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(setscore.this, MainActivity.class));
+			}
+		});
+	}
 }

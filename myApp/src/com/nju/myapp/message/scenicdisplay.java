@@ -15,7 +15,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.nju.myapp.R;
-import com.nju.myapp.bottom.BlankFragment;
 import com.nju.myapp.main.MainActivity;
 import com.nju.myapp.scenicspotlists.ScenicSpot;
 import com.nju.myapp.scenicspotlists.ScenicSpotList;
@@ -32,12 +31,10 @@ import android.os.Message;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.SparseArray;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
@@ -53,8 +50,10 @@ public class scenicdisplay extends AppCompatActivity {
 //	private TableLayout table;
 	int column = 4;
 	/* add bottom */
-	private RadioGroup mTabRadioGroup;
-	private SparseArray<BlankFragment> mFragmentSparseArray;
+
+//	private RadioGroup mTabRadioGroup;
+
+//	private SparseArray<BlankFragment> mFragmentSparseArray;
 
 	@SuppressLint("NewApi")
 	@Override
@@ -195,23 +194,29 @@ public class scenicdisplay extends AppCompatActivity {
 	}
 
 	private void initView() {
-		mTabRadioGroup = (RadioGroup) findViewById(R.id.tabs_rg);
-		mFragmentSparseArray = new SparseArray<BlankFragment>();
-		mFragmentSparseArray.append(R.id.today_tab, BlankFragment.newInstance("今日"));
-		mFragmentSparseArray.append(R.id.record_tab, BlankFragment.newInstance("记录"));
-		mFragmentSparseArray.append(R.id.contact_tab, BlankFragment.newInstance("通讯录"));
-		mFragmentSparseArray.append(R.id.settings_tab, BlankFragment.newInstance("设置"));
-		mTabRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(RadioGroup group, int checkedId) {
-				// 具体的fragment切换逻辑可以根据应用调整，例如使用show()/hide()
-				getSupportFragmentManager().beginTransaction()
-						.replace(R.id.fragment_container, mFragmentSparseArray.get(checkedId)).commit();
-			}
-		});
-		// 默认显示第一个
-		getSupportFragmentManager().beginTransaction()
-				.add(R.id.fragment_container, mFragmentSparseArray.get(R.id.today_tab)).commit();
+
+		/*
+		 * mTabRadioGroup = (RadioGroup) findViewById(R.id.tabs_rg);
+		 * mFragmentSparseArray = new SparseArray<BlankFragment>();
+		 * mFragmentSparseArray.append(R.id.today_tab, BlankFragment.newInstance("今日"));
+		 * mFragmentSparseArray.append(R.id.record_tab,
+		 * BlankFragment.newInstance("记录"));
+		 * mFragmentSparseArray.append(R.id.contact_tab,
+		 * BlankFragment.newInstance("通讯录"));
+		 * mFragmentSparseArray.append(R.id.settings_tab,
+		 * BlankFragment.newInstance("设置"));
+		 * mTabRadioGroup.setOnCheckedChangeListener(new
+		 * RadioGroup.OnCheckedChangeListener() {
+		 * 
+		 * @Override public void onCheckedChanged(RadioGroup group, int checkedId) { //
+		 * 具体的fragment切换逻辑可以根据应用调整，例如使用show()/hide()
+		 * getSupportFragmentManager().beginTransaction()
+		 * .replace(R.id.fragment_container,
+		 * mFragmentSparseArray.get(checkedId)).commit(); } }); // 默认显示第一个
+		 * getSupportFragmentManager().beginTransaction() .add(R.id.fragment_container,
+		 * mFragmentSparseArray.get(R.id.today_tab)).commit();
+		 * 
+		 */
 		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

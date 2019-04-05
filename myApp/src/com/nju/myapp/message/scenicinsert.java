@@ -15,11 +15,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.nju.myapp.R;
+import com.nju.myapp.main.MainActivity;
 import com.nju.myapp.util.HTTPUtil;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -60,6 +62,7 @@ public class scenicinsert extends Activity {
 		scenicinfo = (EditText) findViewById(R.id.editText2);
 		scenicscore = (EditText) findViewById(R.id.editText3);
 		insert = (Button) findViewById(R.id.button1);
+		initView();
 		setListener();
 	}
 
@@ -163,6 +166,15 @@ public class scenicinsert extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu, menu);
 		return true;
+	}
+
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(scenicinsert.this, MainActivity.class));
+			}
+		});
 	}
 
 }

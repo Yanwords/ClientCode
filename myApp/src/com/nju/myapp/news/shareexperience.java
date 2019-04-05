@@ -23,6 +23,7 @@ import com.nju.myapp.util.HTTPUtil;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -57,6 +58,7 @@ public class shareexperience extends Activity {
 		setContentView(R.layout.shareexperience);
 		experienceContent = (EditText) findViewById(R.id.editText1);
 		experience = (Button) findViewById(R.id.button1);
+		initView();
 		setListener();
 	}
 
@@ -157,6 +159,14 @@ public class shareexperience extends Activity {
 		return true;
 	}
 
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(shareexperience.this, MainActivity.class));
+			}
+		});
+	}
 }
 /**
  * 获取Struts2 Http 登录的请求信息

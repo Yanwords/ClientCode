@@ -21,6 +21,7 @@ import com.nju.myapp.util.HTTPUtil;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -66,6 +67,7 @@ public class register extends Activity {
 		age = (EditText) findViewById(R.id.editText4);
 		USERNAME = (TextView) findViewById(R.id.username);
 		register = (Button) findViewById(R.id.button1);
+		initView();
 		setListener();
 	}
 
@@ -169,6 +171,14 @@ public class register extends Activity {
 		return true;
 	}
 
+	private void initView() {
+		findViewById(R.id.sign_iv).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(register.this, MainActivity.class));
+			}
+		});
+	}
 }
 
 /**
